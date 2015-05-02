@@ -1,0 +1,9 @@
+# Compiled source #
+###################
+*.pyc
+
+# Editing tools and IDEs #
+##########################
+*.swp
+*~
+
