@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/usr/local/lib/python2.7/dist-packages/numpy/core/include'
 let g:netrw_dirhist_2='/usr/local/lib/python2.7/dist-packages/numpy/core/include/numpy'
+let g:netrw_dirhist_3='/home/dhan/projects/slideatlas'
+let g:netrw_dirhist_4='/home/dhan/.dotfiles'
