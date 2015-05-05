@@ -19,6 +19,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'klen/python-mode'
 Plugin 'scrooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'desert256.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'seoul256.vim'
 
 "Plugin 'tpope/vim-fugitive'
 "" plugin from http://vim-scripts.org/vim/scripts.html
@@ -51,7 +55,6 @@ filetype plugin indent on    " required
 
 "" DJ personal settings
 "
-:colorscheme desert
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -118,6 +121,7 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
+
 " DJ Jedi configuration
 let g:jedi#usages_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
@@ -127,4 +131,11 @@ map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 " Autoload .vimrc every time saved
 autocmd! bufwritepost .vimrc source %
+
+" To make sure 256 colors are loaded in terminal
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
+colorscheme gruvbox
 
