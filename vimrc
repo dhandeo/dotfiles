@@ -124,3 +124,7 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
+
+" Autoload .vimrc every time saved
+autocmd! bufwritepost .vimrc source %
+
