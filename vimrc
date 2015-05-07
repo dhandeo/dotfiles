@@ -140,4 +140,6 @@ endif
 colorscheme hybrid
 set background=dark
 
+" Clipboard integration
+set clipboard=unnamed
 
