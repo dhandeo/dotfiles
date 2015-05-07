@@ -140,6 +140,15 @@ endif
 colorscheme hybrid
 set background=dark
 
+" More natural navigation across split windows
+" Use :sp to split horizontally
+"     :vsp to split vertically
+"
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Clipboard integration
 set clipboard=unnamed
 
