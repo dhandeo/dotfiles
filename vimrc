@@ -23,7 +23,7 @@ Plugin 'desert256.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'seoul256.vim'
-
+Plugin 'sickill/vim-monokai'
 "Plugin 'tpope/vim-fugitive'
 "" plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -137,7 +137,20 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-colorscheme gruvbox
+colorscheme monokai
+" set background=dark
+
+" More natural navigation across split windows
+" Use :sp to split horizontally
+"     :vsp to split vertically
+"
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Clipboard integration
+set clipboard=unnamed
 
 " Comment and uncomment
 
