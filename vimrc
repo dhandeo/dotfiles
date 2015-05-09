@@ -119,6 +119,8 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
+" Ignore long line 
+let g:pymode_lint_ignore = "E501"
 " Don't autofold code
 let g:pymode_folding = 0
 
@@ -126,6 +128,7 @@ let g:pymode_folding = 0
 let g:jedi#usages_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
+
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
 
