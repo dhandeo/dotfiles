@@ -141,7 +141,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 colorscheme monokai
-" set background=dark
+set background=dark
 
 " More natural navigation across split windows
 " Use :sp to split horizontally
@@ -167,3 +167,8 @@ autocmd FileType vim              let b:comment_leader = '" '
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
+" Put all auxillary files in single location
+"
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
