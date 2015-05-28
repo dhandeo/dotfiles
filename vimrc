@@ -172,3 +172,11 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+
+" NerdTree ignore certain files
+"
+let NERDTreeIgnore = ['\.pyc$']
+
+" Cindent for beginning block comments with indentation
+"
+set cindent
