@@ -24,6 +24,9 @@ Plugin 'morhetz/gruvbox'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'seoul256.vim'
 Plugin 'sickill/vim-monokai'
+Plugin 'MattesGroeger/vim-bookmarks'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'bronson/vim-trailing-whitespace'
 "Plugin 'tpope/vim-fugitive'
 "" plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -141,7 +144,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 colorscheme monokai
-set background=dark
+" set background=dark
 
 " More natural navigation across split windows
 " Use :sp to split horizontally
