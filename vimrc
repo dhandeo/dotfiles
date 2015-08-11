@@ -27,6 +27,8 @@ Plugin 'sickill/vim-monokai'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'bling/vim-airline'
+
 "Plugin 'tpope/vim-fugitive'
 "" plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -183,3 +185,6 @@ let NERDTreeIgnore = ['\.pyc$']
 " Cindent for beginning block comments with indentation
 "
 set cindent
+
+:map <leader>b :ls<CR>:b
+
