@@ -28,8 +28,12 @@ Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'ternjs/tern_for_vim'
+Plugin 'Valloric/YouCompleteMe'
 
-"Plugin 'tpope/vim-fugitive'
 "" plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 "" Git plugin not hosted on GitHub
@@ -125,7 +129,7 @@ let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Ignore long line 
-let g:pymode_lint_ignore = "E501"
+let g:pymode_lint_ignore = "E501,C901"
 " Don't autofold code
 let g:pymode_folding = 0
 

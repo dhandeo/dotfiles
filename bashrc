@@ -115,3 +115,15 @@ fi
 
 alias envsl="export SLIDEATLAS_CONFIG_PATH="/home/dhan/projects/slideatlas-config-kitware/localhost/site_slideatlas.py"; source /home/dhan/projects/envs/slideatlas/bin/activate;cd /home/dhan/projects/slideatlas"
 
+export PATH=$PATH:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export WORKON_HOME=~/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+export PATH=$PATH:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export WORKON_HOME=~/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+export PATH=$PATH:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export WORKON_HOME=~/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
