@@ -29,6 +29,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 "Plugin 'tpope/vim-fugitive'
 "" plugin from http://vim-scripts.org/vim/scripts.html
