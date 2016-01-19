@@ -3,6 +3,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set wildignore+=*/opt/*,*.so,*.swp,*.zip
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -34,6 +35,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'wookiehangover/jshint.vim'
+
+"" RUn jshint only when file is saved
+let JSHintUpdateWriteOnly=1
+
 
 "" plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -87,7 +93,7 @@ set autoindent    " align the new line indent with the previous line
 " DJ Shortcut for NerdTree
 "
 map <F2> :NERDTreeToggle<CR>
-
+let NERDTreeRespectWildIgnore=1
 
 " Python vim configuration "
 "
@@ -138,6 +144,7 @@ let g:pymode_folding = 0
 let g:jedi#usages_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
+let g:jedi#show_call_signatures = "0"
 
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
 
