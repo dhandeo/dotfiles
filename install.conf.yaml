@@ -3,6 +3,7 @@
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
+    ~/.tmux: tmux/
     ~/.vimrc: vimrc
     ~/.gitignore_global: gitignore_global
     ~/.bashrc: bashrc
