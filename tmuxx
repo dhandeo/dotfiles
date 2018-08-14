@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Setup a work space called `work` with two windows
 # first window has 3 panes.
@@ -17,15 +17,15 @@ tmux new-session -d -s $session -n "notebook"
 
 # Select pane 1
 tmux selectp -t 1
-tmux send-keys "cd projects" C-m
+tmux send-keys "cd ~/projects" C-m
 tmux send-keys "source ~/miniconda2/bin/activate" C-m
-tmux send-keys "jupyter notebook" C-m
+tmux send-keys "jupyter notebook --ip=*" C-m
 
 tmux new-window -n "python"
 
 # Select pane 1
 tmux selectp -t 2
-tmux send-keys "cd projects" C-m
+tmux send-keys "cd ~/projects" C-m
 tmux send-keys "source ~/miniconda2/bin/activate" C-m
 
 ## Split pane 1 horizontal by 65%, start redis-server
